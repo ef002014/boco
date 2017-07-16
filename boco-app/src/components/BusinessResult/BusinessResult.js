@@ -24,7 +24,7 @@ const divStyle = {
 class BusinessResult extends React.Component {
   render () {
     console.log(this.props.businessData)
-
+    console.log("getting stuff")
     return (
 
     <div style={styles.root}>
@@ -40,7 +40,7 @@ class BusinessResult extends React.Component {
         <div id="placeName" style={divStyle}>
           <b>{this.props.businessData.name}</b>
           <div id="category">{this.props.businessData.categories[0].title} </div>
-          
+
 
         </div>
         <div id="placeInfo">

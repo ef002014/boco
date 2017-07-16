@@ -38,17 +38,17 @@ class BusinessResultPage extends React.Component {
             return <div> Loading </div>
         } else {
             return (
-                 <div>
-                    {this.state.businesses.map((businessData) =>
-                        (<li key={businessData.id}>BusinessResult businessData={businessData}</li>)}
-                 </div>
+               <div>
+                   {this.state.businesses.map((businessData) =>
+                       (<BusinessResult businessData={businessData} />))
+                   }
+               </div>
             )
         }
     }
 }
 
 BusinessResultPage.propTypes = {
-
     request: PropTypes.object,
 }
 
